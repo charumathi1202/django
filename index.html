@@ -1,0 +1,917 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Park Sheraton</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" /> -->
+  </head>
+  <body>
+    <!-- background circles start -->
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+    <!-- background circles end -->
+
+    <!-- main start -->
+    <div class="main">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button type="button" class="nav-toggler">
+              <span></span>
+            </button>
+            <nav class="nav active">
+              <div class="nav-inner">
+                <ul>
+                  <li><a href="#home" class="nav-item link-item">Home</a></li>
+                  <li><a href="#about" class="nav-item link-item">About</a></li>
+                  <li>
+                    <a href="#room" class="nav-item link-item">Room Booking</a>
+                  </li>
+                  <li>
+                    <a href="#food" class="nav-item link-item">Food Order</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#login" class="btn nav-item link-item">LogIn</a>
+                  </li>
+                  <li>
+                    <a href="#register" class="btn nav-item link-item"
+                      >Create account</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+      <!-- login start -->
+      <section class="login-section sec-padding" id="login">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>login</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="login-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="submit-btn login">
+                    <button type="submit" class="btn">LogIn</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- login end -->
+      <!-- register start -->
+      <section class="login-section sec-padding" id="register">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>Register</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="login-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Password"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="submit-btn login">
+                    <button type="submit" class="btn">
+                      click here to Register
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- register end -->
+
+      <!-- home start -->
+      <section class="home-section align-items-center active" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home-text">
+              <h3>Park Sheraton</h3>
+              <h1>It feels like staying in your own home.</h1>
+              <h2>More than a hotel.... An experience</h2>
+              <a href="#room" class="btn link-item">Room Booking</a>
+              <a href="#food" class="btn link-item">Order your food</a>
+            </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img
+                  src="{% static '/assets/imgs/pizza.png' %}"
+                  alt="profile-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- home end -->
+
+      <!-- about start -->
+      <section class="about-section sec-padding" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>About Us</h2>
+              <h3>Facilities</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+
+      <!-- Room booking  start-->
+      <section class="port-section sec-padding" id="room">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>Room Booking</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/room1.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Family Room</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.4000</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Book now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <!-- <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button> -->
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/room2.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Deluxe Room</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.3000</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Book now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/room3.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Classic Room</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.2500</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Book now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/room4.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Superior Room</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.3500</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Book now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/room5.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Luxury Room</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.3000</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Book now
+              </button>
+
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/room6.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Single room</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.2000</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Book now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+          </div>
+        </div>
+      </section>
+      <!-- Room booking  end-->
+
+      <!-- food order start-->
+      <section class="port-section sec-padding" id="food">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>menu</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/idli.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Idli</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.35</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Order now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/dosa.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Dosa</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.40</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Order now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/biriyani.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Biriyani</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.110</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Order now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/chicken_pizza.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Chicken Pizza</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.150</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Order now
+              </button>
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/cake.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Chocolate cake</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.350</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Order now
+              </button>
+
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+            <!-- row items start -->
+            <div class="port-item">
+              <div class="port-item-thumbnail">
+                <img
+                  src="{% static '/assets/imgs/soup.jpg' %}"
+                  alt="port item thumb"
+                />
+              </div>
+              <h3 class="port-item-title">Tomato Soup</h3>
+              <div class="general-info">
+                <ul>
+                  <li>Price : <span>Rs.80</span></li>
+                </ul>
+              </div>
+              <button type="button" class="btn view-project-btn">
+                Order now
+              </button>
+
+              <div class="port-item-details">
+                <div class="description">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi ex quibusdam sed molestias totam. Iure aut quos autem
+                    at dignissimos dicta odit ad molestias, veritatis dolorum
+                    omnis dolorem quia veniam.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Room type : <span>Luxury</span></li>
+                    <li>Price : <span>Rs.2500 per night</span></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn view-project-btn">
+                  Proceed to pay
+                </button>
+              </div>
+            </div>
+            <!-- row items end -->
+          </div>
+        </div>
+      </section>
+      <!-- food order  end-->
+
+      <!-- Contact section start -->
+      <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>Contact us</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <textarea
+                      placeholder="Message"
+                      class="input-control"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit" class="btn">Send message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>Email</h3>
+                <p>123abc@gmail.com</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>Phone</h3>
+                <p>1234567789</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section end -->
+    </div>
+    <!-- main end -->
+
+    <!-- room item details popup start -->
+    <div class="port-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="button" class="btn pp-close">
+              <i class="fas fa-times"></i>
+            </button>
+
+            <div class="pp-thumbnail">
+              <div class="row">
+                <div class="section-title">
+                  <h2>Billing Address</h2>
+                </div>
+                <div class="login-form">
+                  <form>
+                    <div class="row">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Full Name"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Email"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Phone"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Address"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="City"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Zip"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="State"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="section-title">
+                        <h2>Bill Amount</h2>
+                      </div>
+                      <div class="section-title">
+                        <h2>Payment</h2>
+                      </div>
+                      <div class="contact-info-item">
+                        <h3>Accepted cards</h3>
+                        <div class="social-links">
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-cc-visa"></i
+                          ></a>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-cc-amex"></i
+                          ></a>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-cc-mastercard"></i
+                          ></a>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-cc-discover"></i
+                          ></a>
+                          <!-- <a href="#" target="_blank"
+                            ><i class="fab fa-linkedin"></i
+                          ></a>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-whatsapp"></i
+                          ></a> -->
+                        </div>
+                      </div>
+                      <!-- <h4>Accepted cards</h4>
+                      <div class="icon-container">
+                        <i class="fab fa-cc-visa" style="color: navy"></i>
+                        <i class="fab fa-cc-amex" style="color: blue"></i>
+                        <i class="fab fa-cc-mastercard" style="color: red"></i>
+                        <i class="fab fa-cc-discover" style="color: orange"></i>
+                      </div> -->
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Name on card"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="card number"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="Exp"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          placeholder="cvv"
+                          class="input-control"
+                          required
+                        />
+                      </div>
+
+                      <button class="btn">Proceed to pay</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- room item details popup end -->
+
+    <script src="{% static '/assets/js/script.js' %}"></script>
+  </body>
+</html>
